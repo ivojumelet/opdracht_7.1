@@ -1,11 +1,12 @@
-var budget = 100;
-var product = 60;
-if (budget >= product) {
-    document.getElementById("result").innerHTML = "U heeft genoeg geld!";
-    document.getElementById("result").style.color = "green";
-    console.log();
-} else{
-    document.getElementById("result").innerHTML = "Helaas, te weinig geldt";
-    document.getElementById("result").style.color = "red";
-    console.log();
-}
+let budget = 100;
+let productprijs = 60;
+let saldo = document.getElementById ("Resultaat")
+if (budget => productprijs)
+let over = budget - productprijs
+saldo.innerHTML = "U heeft genoeg geld!" + over + "is er over van :" + budget + "euro";
+saldo.style.color = "green"
+
+    else {
+        saldo.innerHTML= "Helaas, u heeft te weinig geld!";
+        saldo.style.color = "red";
+    }
